@@ -1,0 +1,37 @@
+PhotoWidget
+Copyright 2026 Sylvara-0604
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+--------------------------------------------------------------------------------
+Third-party components
+--------------------------------------------------------------------------------
+
+Embedded asset
+  App icon shape: "photo_library" from Google Material Design Icons
+    https://github.com/google/material-design-icons
+    Licensed under the Apache License, Version 2.0.
+    Exact source file and the transform applied: THIRD_PARTY_NOTICES.md
+    Upstream licence text: docs/third-party/material-design-icons-LICENSE.txt
+
+Build dependencies (resolved from Google Maven and Maven Central at build time;
+no third-party binaries are vendored into this repository)
+  AndroidX / Jetpack, Kotlin standard library, kotlinx.coroutines,
+  Material Components — all licensed under the Apache License, Version 2.0.
+
+Provenance
+  The concept of this widget comes from the AOSP Gallery2 application
+  (https://android.googlesource.com/platform/packages/apps/Gallery2/, Apache-2.0).
+  No Gallery2 source code or resource was copied into this project; the
+  implementation is an independent rewrite.
+--------------------------------------------------------------------------------
