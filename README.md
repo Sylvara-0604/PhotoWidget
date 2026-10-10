@@ -26,7 +26,7 @@ It puts one or more photos from your library onto the home screen as a card with
 
 ## Install
 
-Download the APK from the [Releases](../../releases) page and install it.
+Download the APK from the [Releases](https://github.com/Sylvara-0604/PhotoWidget/releases) page and install it.
 
 The APK is signed with a development key, so Play Protect may show a warning — that is expected for a self-built side-loaded app. If you previously installed a build signed with a different key, uninstall it first (`adb uninstall com.android.gallery3d.photowidget`); note that removing the app also removes widgets already placed on your home screen.
 
@@ -86,4 +86,4 @@ Only one embedded asset: the app icon shape is `photo_library` from [Google Mate
 
 Android 桌面图片小部件，用 Kotlin + Compose（Material 3 Expressive）从零重写。三种形态：相册（滑动切图）、单图、随机全部。不自动翻页，只有你操作才换图。缩略图先出、后台解清晰版替换；卡片位图按小部件实例的真实像素尺寸生成，1:1 不与显示错位。卡片底板色跟随系统主题图标底色，应用图标含单色主题层，release 包经 R8 与资源压缩后约 2.6 MB。
 
-要求 Android 13+ / arm64-v8a。从 [Releases](../../releases) 下载 APK 安装即可（开发密钥签名，Play 保护机制可能提示风险，属正常）。
+要求 Android 13+ / arm64-v8a。从 [Releases](https://github.com/Sylvara-0604/PhotoWidget/releases) 下载 APK 安装即可（开发密钥签名，Play 保护机制可能提示风险，属正常）。
