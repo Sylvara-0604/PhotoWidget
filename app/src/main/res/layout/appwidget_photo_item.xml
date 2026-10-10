@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- StackView 单张卡片：卡片外观（圆角 + 柔和阴影）由 CardRenderer 烘焙在位图里 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appwidget_photo_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/appwidget_photo_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/appwidget_photo_content_description"
+        android:scaleType="fitCenter" />
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      应用图标底板色 = **系统主题色**（与桌面主题图标底板同源）。
+      与 values/colors_widget.xml 的 widget_card_plate 引同一批系统资源：
+        浅色 @android:color/system_accent1_100、深色 @android:color/system_accent2_800
+      出处：AOSP/LineageOS `frameworks/libs/systemui` 的
+            iconloaderlib/res/values{,-night}-v31/colors.xml
+            （themed_icon_background_color = system_accent1_100 / 夜间 system_accent2_800）
+      随壁纸与主题自动变化，不写死色值。
+    -->
+    <color name="ic_launcher_background">@android:color/system_accent1_100</color>
+</resources>

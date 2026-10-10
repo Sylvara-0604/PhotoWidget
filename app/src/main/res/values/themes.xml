@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用壳走 Material 3 Expressive（动态取色由 Compose 侧的 PhotoWidgetTheme 负责） -->
+    <style name="Theme.PhotoWidget" parent="Theme.Material3Expressive.DayNight.NoActionBar" />
+
+    <!-- 配置页：M3 Expressive 对话框式页面 -->
+    <style name="Theme.PhotoWidget.Dialog" parent="Theme.Material3Expressive.DayNight.Dialog">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <!-- 点击跳板：完全透明、不显示界面 -->
+    <style name="Theme.PhotoWidget.Transparent" parent="@android:style/Theme.Translucent.NoTitleBar" />
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  monochrome（主题图标 / Themed icon）层：同一图形，纯单色不透明。
+  launcher 会忽略这里的填充色，用系统主题色重新着色（Android 13+ / API 33+，与本工程 minSdk 一致）。
+  出处同上：google/material-design-icons 的 photo_library，Apache-2.0。
+  尺寸取值同 ic_launcher_foreground.xml：图形墨迹是 20x20 方形，四角半径 = 边长/√2，
+  官方规范（developer.android.com/develop/ui/views/launch/icon_design_adaptive）：
+  图层 108x108dp、四周外扩 18dp 为遮罩预留、"66x66 安全区永不被 OEM 形状蒙版裁剪"，
+  圆角遮罩裁的是该方框的**内切圆（半径 33）** ⇒ 方形图形边长上限 46.7，这里取 44。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="2.2"
+        android:scaleY="2.2"
+        android:translateX="27.6"
+        android:translateY="27.6">
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M22,16L22,4c0,-1.1 -0.9,-2 -2,-2L8,2c-1.1,0 -2,0.9 -2,2v12c0,1.1 0.9,2 2,2h12c1.1,0 2,-0.9 2,-2zM11,12l2.03,2.71L16,11l4,5L8,16l3,-4zM2,6v14c0,1.1 0.9,2 2,2h14v-2L4,20L4,6L2,6z" />
+    </group>
+</vector>

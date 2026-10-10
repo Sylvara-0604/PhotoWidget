@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widget_photo_placeholder">#FFE0E0E0</color>
+
+    <!--
+      卡片底板（＝边框）色 = **桌面主题图标底色**，直接引用系统资源。
+      出处：AOSP / LineageOS `frameworks/libs/systemui` 的
+      iconloaderlib/res/values-v31/colors.xml ——
+          <color name="themed_icon_background_color">@android:color/system_accent1_100</color>
+          <color name="themed_icon_color">@android:color/system_accent1_700</color>
+      （深色变体在 values-night-v31：底色 = system_accent2_800）
+      引用同一资源 = 与桌面图标底板完全同色，并随壁纸/主题自动变化（不再取样写死）。
+    -->
+    <color name="widget_card_plate">@android:color/system_accent1_100</color>
+
+    <!-- 卡片阴影色：对应 1.1 实测的阴影强度（alpha 82/255 ≈ 32%） -->
+    <color name="widget_card_shadow_color">#52000000</color>
+</resources>

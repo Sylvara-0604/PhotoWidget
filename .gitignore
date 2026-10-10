@@ -1,0 +1,31 @@
+# ---- Build output ----
+build/
+app/build/
+.gradle/
+.kotlin/
+logs/
+*.log
+
+# ---- Local machine configuration ----
+local.properties
+keystore.properties
+keystore/
+
+# ---- Kept local only (development handoff / research material / local artifacts) ----
+# These either describe this specific machine or reference the local toolchain layout.
+NEXT.md
+HISTORY.md
+dist/
+docs/refs/
+_tmp_oss/
+tools/build_photowidget.ps1
+tools/check_offline_cache.py
+tools/verify_apk.py
+docs/third-party/icon_render.py
+
+# ---- IDE / OS ----
+.idea/
+*.iml
+*.hprof
+.DS_Store
+Thumbs.db

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 堆叠形态：StackView 做手势宿主（滑动切图 / 多张堆叠 / 斜率），卡片外观由 CardRenderer 自绘 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/appwidget_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="@dimen/stack_photo_width"
+            android:layout_height="@dimen/stack_photo_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/widget_card_frame">
+
+            <TextView
+                android:id="@+id/appwidget_empty_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/appwidget_empty_text"
+                android:textColor="@color/m3_on_surface_variant" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <StackView
+        android:id="@+id/appwidget_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:loopViews="true" />
+</FrameLayout>

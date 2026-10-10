@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  应用图标前景层（adaptive icon 用，108x108 画布）。
+  图形：Google Material Design Icons 的 photo_library（黑色 24dp 版）
+        仓库 https://github.com/google/material-design-icons ，许可 Apache-2.0
+        （LICENSE 副本见工程 docs/third-party/material-design-icons-LICENSE.txt）。
+  出处文件：android/image/photo_library/materialicons/black/res/drawable/baseline_photo_library_24.xml
+  尺寸依据（官方规范 developer.android.com/develop/ui/views/launch/icon_design_adaptive）：
+    · 「将所有图层的大小调整为 108x108 dp」；「四周各 18 dp 预留给遮罩」→ 中间 72x72；
+    · 「66x66 安全区是永远不会被 OEM 设定的形状蒙版裁剪掉的区域」= 72 方框的内切圆，
+      半径 33（不是边长 66 的方框！）；
+    · 「徽标至少 48x48 dp、不得超过 66x66 dp」（下限是清晰度要求，上限是遮罩后的可视范围）。
+  本图形墨迹在原 24 视口内占 (2,2)-(22,22)，是**边长 20 的方形**，四角半径 = 边长/√2：
+    边长 66 → 46.7（远超 R33，四角必被切，v1.11 初版就是这么错的）
+    边长 50 → 35.4（仍在 R33 外）　　边长 48 → 33.9（贴边）　　边长 44 → 31.1 ✅（余量 2.2）
+  ⇒ 取 44：scale = 44/20 = 2.2，translate = 54 − 12×2.2 = 27.6（把原视口中心移到画布中心）。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="2.2"
+        android:scaleY="2.2"
+        android:translateX="27.6"
+        android:translateY="27.6">
+        <path
+            android:fillColor="#FF1C1B1F"
+            android:pathData="M22,16L22,4c0,-1.1 -0.9,-2 -2,-2L8,2c-1.1,0 -2,0.9 -2,2v12c0,1.1 0.9,2 2,2h12c1.1,0 2,-0.9 2,-2zM11,12l2.03,2.71L16,11l4,5L8,16l3,-4zM2,6v14c0,1.1 0.9,2 2,2h14v-2L4,20L4,6L2,6z" />
+    </group>
+</vector>

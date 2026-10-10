@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhotoWidget</string>
+    <string name="appwidget_title">PhotoWidget</string>
+    <string name="appwidget_description">Shows photos from your library on the home screen</string>
+    <string name="appwidget_empty_text">No photos.</string>
+    <string name="appwidget_photo_content_description">Photo</string>
+
+    <!-- 配置页 -->
+    <string name="widget_type">Choose images</string>
+    <string name="widget_type_album">Choose an album</string>
+    <string name="widget_type_photo">Choose an image</string>
+    <string name="widget_type_shuffle">Shuffle all images</string>
+    <string name="config_title">Add photo widget</string>
+    <string name="config_album_title">Choose an album</string>
+    <string name="config_pick_image">Pick an image</string>
+    <string name="config_saving">Saving…</string>
+    <string name="cancel">Cancel</string>
+    <string name="permission_title">Photo access needed</string>
+    <string name="permission_message">PhotoWidget needs access to your photos to show them in the widget.</string>
+    <string name="permission_grant">Grant access</string>
+    <string name="permission_granted">Photo access granted</string>
+    <string name="permission_partial">Only selected photos are available. Grant full access to show all photos.</string>
+    <string name="permission_manage">App settings</string>
+    <string name="main_placeholder">Long-press the home screen and add the PhotoWidget widget</string>
+    <plurals name="configured_widgets">
+        <item quantity="one">%1$d widget added</item>
+        <item quantity="other">%1$d widgets added</item>
+    </plurals>
+    <string name="widget_not_configured">Not configured. Tap to set up.</string>
+    <string name="no_viewer">No app available to view this photo.</string>
+</resources>

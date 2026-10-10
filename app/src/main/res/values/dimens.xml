@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 灏忛儴浠跺昂瀵镐护鐗?-->
+    <dimen name="widget_min_width">180dp</dimen>
+    <dimen name="widget_min_height">180dp</dimen>
+    <dimen name="widget_min_resize_width">110dp</dimen>
+    <dimen name="widget_min_resize_height">110dp</dimen>
+
+    <!-- 鍫嗗彔鍗＄墖鍐呭灏哄锛氫笌 1.1 涓€鑷达紙160x96dp锛?-->
+    <dimen name="stack_photo_width">160dp</dimen>
+    <dimen name="stack_photo_height">96dp</dimen>
+
+    <!--
+      鍗＄墖鏍峰紡浠ょ墝锛氬渾瑙?杈规/闃村奖鐨?*鏁板€煎彇鑷?1.1 鐗堣祫浜у疄娴?*锛?.1 鐨?9-patch锛氫腑闂?9脳9 涓嶉€忔槑鐧芥澘銆?      鏃犳弿杈圭嚎锛屽鍦?3 art px 鏌斿拰闃村奖 alpha鈮?2%锛?40dpi 涓婃寜 hdpi 缂╂斁 1.83脳锛夈€?      - corner锛?.1 瀹炴祴鈮堟棤鍦嗚锛堟柟鍧?+ 闃村奖鏌斿寲锛夛紝鍙?2dp
+      - border锛氱収鐗囩浉瀵瑰簳鏉跨殑鍐呯缉閲忥紙闇插嚭鐨勫簳鏉匡紳杈规锛夈€?.1 瀹炴祴 鈮? art px 鈫?鍘?1dp锛?                鐢ㄦ埛 2026-10-02 瑕佹眰銆岃竟妗嗚瑙夊帤搴﹀鍔犱竴鍊嶃€嶁啋 **2dp**
+      - shadow锛氬鍦堥槾褰?鈮?.5px 鈫?2dp
+      涓嶈皟 Display.getRoundedCorner()锛堢敤鎴锋槑纭姹備笉鏌?API锛夈€?    -->
+    <dimen name="widget_card_corner">2dp</dimen>
+    <dimen name="widget_card_border">3dp</dimen>
+    <dimen name="widget_card_shadow">2dp</dimen>
+
+    <dimen name="widget_photo_padding">4dp</dimen>
+    <dimen name="widget_inner_padding">6dp</dimen>
+
+    <!-- 鍗曞浘鐩告褰㈡€佺殑鍐呰竟璺?-->
+    <dimen name="photo_frame_padding_h">12dp</dimen>
+    <dimen name="photo_frame_padding_top">4dp</dimen>
+    <dimen name="photo_frame_padding_bottom">12dp</dimen>
+</resources>

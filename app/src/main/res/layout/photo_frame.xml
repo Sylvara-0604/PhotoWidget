@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 单图形态：卡片（圆角 + 柔和阴影）由 CardRenderer 烘焙在位图里 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/appwidget_photo_content_description"
+        android:scaleType="centerCrop" />
+</FrameLayout>

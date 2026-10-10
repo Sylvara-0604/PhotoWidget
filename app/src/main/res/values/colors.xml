@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Material 3 配色角色集（浅色）——按 Google M3 配色文档的角色命名给出完整角色，
+  供 RemoteViews 小部件使用（小部件不能吃 Compose 的 ColorScheme，只能读资源）。
+  深浅色切换由 values-night 提供同一套角色名。
+-->
+<resources>
+    <color name="m3_primary">#FF6750A4</color>
+    <color name="m3_on_primary">#FFFFFFFF</color>
+    <color name="m3_primary_container">#FFEADDFF</color>
+    <color name="m3_on_primary_container">#FF21005D</color>
+
+    <color name="m3_secondary">#FF625B71</color>
+    <color name="m3_on_secondary">#FFFFFFFF</color>
+    <color name="m3_secondary_container">#FFE8DEF8</color>
+    <color name="m3_on_secondary_container">#FF1D192B</color>
+
+    <color name="m3_tertiary">#FF7D5260</color>
+    <color name="m3_on_tertiary">#FFFFFFFF</color>
+    <color name="m3_tertiary_container">#FFFFD8E4</color>
+    <color name="m3_on_tertiary_container">#FF31111D</color>
+
+    <color name="m3_error">#FFB3261E</color>
+    <color name="m3_on_error">#FFFFFFFF</color>
+    <color name="m3_error_container">#FFF9DEDC</color>
+    <color name="m3_on_error_container">#FF410E0B</color>
+
+    <color name="m3_background">#FFFEF7FF</color>
+    <color name="m3_on_background">#FF1D1B20</color>
+
+    <color name="m3_surface">#FFFEF7FF</color>
+    <color name="m3_on_surface">#FF1D1B20</color>
+    <color name="m3_surface_variant">#FFE7E0EC</color>
+    <color name="m3_on_surface_variant">#FF49454F</color>
+
+    <color name="m3_outline">#FF79747E</color>
+    <color name="m3_outline_variant">#FFCAC4D0</color>
+
+    <color name="m3_surface_container_lowest">#FFFFFFFF</color>
+    <color name="m3_surface_container_low">#FFF7F2FA</color>
+    <color name="m3_surface_container">#FFF3EDF7</color>
+    <color name="m3_surface_container_high">#FFECE6F0</color>
+    <color name="m3_surface_container_highest">#FFE6E0E9</color>
+
+    <color name="m3_inverse_surface">#FF322F35</color>
+    <color name="m3_inverse_on_surface">#FFF5EFF7</color>
+    <color name="m3_inverse_primary">#FFD0BCFF</color>
+</resources>

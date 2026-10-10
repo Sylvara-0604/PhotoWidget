@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">图片小部件</string>
+    <string name="appwidget_title">图片小部件</string>
+    <string name="appwidget_description">在桌面显示相册里的照片</string>
+    <string name="appwidget_empty_text">没有照片。</string>
+    <string name="appwidget_photo_content_description">照片</string>
+
+    <!-- 配置页 -->
+    <string name="widget_type">选择图片</string>
+    <string name="widget_type_album">选择相册</string>
+    <string name="widget_type_photo">选择图片</string>
+    <string name="widget_type_shuffle">随机显示所有图片</string>
+    <string name="config_title">添加图片小部件</string>
+    <string name="config_album_title">选择相册</string>
+    <string name="config_pick_image">选择一张图片</string>
+    <string name="config_saving">正在保存…</string>
+    <string name="cancel">取消</string>
+    <string name="permission_title">需要照片访问权限</string>
+    <string name="permission_message">图片小部件需要读取照片，才能在桌面显示它们。</string>
+    <string name="permission_grant">授予权限</string>
+    <string name="permission_granted">已授予权限</string>
+    <string name="permission_partial">当前只能读取已选中的照片，授予完全访问权限才能显示全部照片。</string>
+    <string name="permission_manage">应用权限设置</string>
+    <string name="main_placeholder">长按桌面，添加「图片小部件」</string>
+    <plurals name="configured_widgets">
+        <item quantity="other">已添加的小部件：%1$d 个</item>
+    </plurals>
+    <string name="widget_not_configured">尚未配置，点击这里设置。</string>
+    <string name="no_viewer">没有可以打开这张照片的应用。</string>
+</resources>

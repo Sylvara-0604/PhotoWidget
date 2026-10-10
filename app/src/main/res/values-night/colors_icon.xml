@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 深色主题下的图标底板：与夜间 widget_card_plate 同色（system_accent2_800） -->
+    <color name="ic_launcher_background">@android:color/system_accent2_800</color>
+</resources>

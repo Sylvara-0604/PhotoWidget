@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 只支持 API 33+，读照片只需 READ_MEDIA_IMAGES；
+         API 34+ 追加 READ_MEDIA_VISUAL_USER_SELECTED 以支持"仅选中的照片"部分授权 -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PhotoWidget">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 小部件宿主（旧版对应 PhotoAppWidgetProvider）；点击"换一张"也发给它 -->
+        <receiver
+            android:name=".widget.PhotoWidgetProvider"
+            android:exported="true"
+            android:label="@string/appwidget_title">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <!-- StackView 的数据源（RemoteViewsService，懒加载；重启回来的原因见 NEXT.md） -->
+        <service
+            android:name=".widget.PhotoWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <!-- 点击跳板（小部件的 PendingIntent 必须是显式 Intent 指向本 App 组件） -->
+        <activity
+            android:name=".widget.PhotoOpenActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:noHistory="true"
+            android:theme="@style/Theme.PhotoWidget.Transparent" />
+
+        <!-- 添加小部件时的配置页（旧版对应 WidgetConfigure + WidgetTypeChooser） -->
+        <activity
+            android:name=".config.WidgetConfigActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/Theme.PhotoWidget.Dialog">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

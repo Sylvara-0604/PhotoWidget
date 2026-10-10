@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  小部件预览布局（android:previewLayout，API 31+）。
+  用户 2026-10-03 令：「算了，你不要添加图案了，直接放应用图标」
+  → 这里直接显示 App 图标（@mipmap/ic_launcher，自适应图标），
+    并与 android:previewImage 指向同一资源，两种读法的 launcher 看到的东西一致。
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher" />
+</FrameLayout>
